@@ -21,13 +21,17 @@ const Contact = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <Button size="lg" className="glow gap-2 w-full sm:w-auto">
-              <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
-              Написать в Telegram
+            <Button size="lg" className="glow gap-2 w-full sm:w-auto" asChild>
+              <a href="https://t.me/Dev0ps18" target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
+                Написать в Telegram
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
-              <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-              Отправить Email
+            <Button size="lg" variant="outline" className="gap-2 w-full sm:w-auto" asChild>
+              <a href="mailto:notakriuskreem@gmail.com">
+                <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
+                Отправить Email
+              </a>
             </Button>
           </div>
 

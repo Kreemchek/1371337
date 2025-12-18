@@ -17,10 +17,20 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-3 sm:gap-4">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a
+              href="mailto:notakriuskreem@gmail.com"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Написать на Email"
+            >
               <Github className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a
+              href="https://t.me/Dev0ps18"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-primary transition-colors"
+              aria-label="Написать в Telegram"
+            >
               <Send className="w-4 h-4 sm:w-5 sm:h-5" />
             </a>
           </div>
