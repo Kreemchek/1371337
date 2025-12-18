@@ -100,6 +100,13 @@
   }
 }
 
+@layer base {
+  html {
+    /* fixed header offset for anchor links */
+    scroll-padding-top: 4.5rem;
+  }
+}
+
 @keyframes float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
