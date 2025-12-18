@@ -104,6 +104,7 @@
   html {
     /* fixed header offset for anchor links */
     scroll-padding-top: 4.5rem;
+    overflow-x: hidden;
   }
 }
 
@@ -190,6 +191,10 @@
 @layer base {
   body {
     @apply text-foreground bg-background;
+    overflow-x: hidden;
+  }
+
+  #root {
     overflow-x: hidden;
   }
   
