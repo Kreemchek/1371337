@@ -59,7 +59,9 @@ const WebsitesList = () => {
                     }`}>
                       {site.name}
                     </h3>
-                    <p className="text-xs sm:text-sm text-muted-foreground truncate">{site.description}</p>
+                    <p className="text-xs sm:text-sm text-muted-foreground clamp-2 break-words">
+                      {site.description}
+                    </p>
                   </div>
                 </div>
                 <div className="mt-2 sm:mt-0 w-full sm:w-auto flex items-center justify-between sm:justify-start gap-3 sm:gap-4 pl-11 sm:pl-0">

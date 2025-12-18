@@ -162,6 +162,14 @@
   }
 }
 
+/* Utility: clamp text to 2 lines (without extra Tailwind plugins) */
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
 /* Text gradient */
 .text-gradient {
   background: linear-gradient(135deg, hsl(175 80% 50%), hsl(195 80% 45%));
