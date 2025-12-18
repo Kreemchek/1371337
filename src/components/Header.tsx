@@ -1,9 +1,12 @@
+import { useState } from "react";
 import { Code2, Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import ThemeToggle from "./ThemeToggle";
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet";
 
 const Header = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
       <div className="container px-4 sm:px-6">
@@ -39,7 +42,7 @@ const Header = () => {
             </Button>
 
             {/* Mobile menu */}
-            <Sheet>
+            <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="md:hidden" aria-label="Открыть меню">
                   <Menu className="h-5 w-5" />
@@ -54,6 +57,7 @@ const Header = () => {
                   <SheetClose asChild>
                     <a
                       href="#services"
+                      onClick={() => setOpen(false)}
                       className="rounded-lg px-3 py-3 text-base text-foreground hover:bg-muted transition-colors"
                     >
                       Услуги
@@ -62,6 +66,7 @@ const Header = () => {
                   <SheetClose asChild>
                     <a
                       href="#portfolio"
+                      onClick={() => setOpen(false)}
                       className="rounded-lg px-3 py-3 text-base text-foreground hover:bg-muted transition-colors"
                     >
                       Портфолио
@@ -70,6 +75,7 @@ const Header = () => {
                   <SheetClose asChild>
                     <a
                       href="#websites"
+                      onClick={() => setOpen(false)}
                       className="rounded-lg px-3 py-3 text-base text-foreground hover:bg-muted transition-colors"
                     >
                       Сайты
@@ -78,6 +84,7 @@ const Header = () => {
                   <SheetClose asChild>
                     <a
                       href="#contact"
+                      onClick={() => setOpen(false)}
                       className="rounded-lg px-3 py-3 text-base text-foreground hover:bg-muted transition-colors"
                     >
                       Контакты
@@ -88,7 +95,9 @@ const Header = () => {
                 <div className="mt-6">
                   <SheetClose asChild>
                     <Button className="w-full" asChild>
-                      <a href="#contact">Обсудить проект</a>
+                      <a href="#contact" onClick={() => setOpen(false)}>
+                        Обсудить проект
+                      </a>
                     </Button>
                   </SheetClose>
                 </div>

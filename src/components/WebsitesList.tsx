@@ -62,7 +62,7 @@ const WebsitesList = () => {
                     <p className="text-xs sm:text-sm text-muted-foreground truncate">{site.description}</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-3 sm:gap-4 mt-2 sm:mt-0 ml-11 sm:ml-0">
+                <div className="mt-2 sm:mt-0 w-full sm:w-auto flex items-center justify-between sm:justify-start gap-3 sm:gap-4 pl-11 sm:pl-0">
                   <span className={`text-xs px-2 sm:px-3 py-1 rounded-full ${
                     site.isCTA
                       ? "bg-primary/20 text-primary font-medium"
