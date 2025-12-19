@@ -50,11 +50,11 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 animate-slide-up animation-delay-400">
-            <Button size="lg" className="glow w-full sm:w-auto">
-              Смотреть работы
+            <Button size="lg" className="glow w-full sm:w-auto" asChild>
+              <a href="#portfolio">Смотреть работы</a>
             </Button>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto">
-              Связаться со мной
+            <Button size="lg" variant="outline" className="w-full sm:w-auto" asChild>
+              <a href="#contact">Связаться со мной</a>
             </Button>
           </div>
 
